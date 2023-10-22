@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-.slide-container {
+
+.slide-container {/*nas classes vou usar o mesmo tamanho da imagem ou que eu quero q seja*/
       width: 700px;
       max-height: 700px;
       margin-left: auto;
@@ -9,14 +10,14 @@
       text-align: center;
 }
 .imagem {
-      width: 2400px; /*tamanho da imagem multiplicado por tres*/
+      width: 2400px; /*imagem container tem q ter o tamanho combinado de todos as imagems  combinadas*/
       max-height: 700px;
       position: relative;
-     
-      -webkit-transition: left 2s;
-      -moz-transition: left 2s;
-      -o-transition: left 2s;
-       transition: left 2s;
+     /*relativa para a funcionar a trasition*/
+      -webkit-transition: left 2s;/*chrome*/
+      -moz-transition: left 2s;/*fire fox*/
+      -o-transition: left 2s;/*opera mini*/
+       transition: left 2s;/* padrao*/
 }
 .slide-imagem {
         width: 700px;
