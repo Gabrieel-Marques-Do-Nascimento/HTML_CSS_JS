@@ -22,18 +22,22 @@ aside{
     background: white;
     border-radius: 10px;
 }
-.fernado-pessoa{
+.imagem{
+background-attachment: fixed;
+background-size: cover;
+}
+#fernado-pessoa{
     color: azure;
  
     background: url("imagens/pexels-jay-pizzle-3802510.jpg") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+    
+    
    
 }
-.fernado-pessoa p{
+#fernado-pessoa p{
        text-shadow: 0px 2px 3px;;
 }
-.fernado-pessoa  span {
+#fernado-pessoa  span {
     text-shadow: 1px 2px 3px black;
 
 }
