@@ -1,46 +1,70 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+      margin: 0%;
+      padding: 0%;
 }
-body,html{
-    background: rgb(0,0,0);
-    min-height: 100vh;
+body,
+html {
+      background: rgb(0, 0, 0);
+      min-height: 100vh;
+      margin: auto;
 }
-article{
-    background: rgb(234, 232, 232);
-    margin: auto;
-  
-   
+article {
+      background: rgb(0, 0, 0);
+      margin: auto;
+      color: white;
 }
-aside{
-    /* position: relative;
-    top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%); */
-    
-     padding: 10px;
-    
-    background: white;
-    border-radius: 10px;
+aside {
+      min-height: 400px;
+      width: 98vw;
+
+      text-shadow: 1px 2px 3px black;
 }
 
-aside#fernado-pessoa{
-  padding: 0;
-    background: url("imagens/pexels-jay-pizzle-3802510.jpg") no-repeat;
-    background-size: contain;
-    /* background-position: center center; */
-    background-attachment: fixed;
-    
+aside#fernando-pessoa {
+      margin: auto;
+      padding: 0;
+      background: white url("imagens/pexels-antoni-shkraba-4348401.jpg")
+            no-repeat;
+      background-size: cover;
+     background-attachment: fixed;
+     margin: 0 0 100px 0;
+    /*alinhar o filho no centro*/  
+  display: flex;
+   justify-content: center;
+   align-items: center;
+      
 }
-#fernado-pessoa p{
-  padding: 10px;
-  color: white;
-  background-color: #0000005d;
-       text-shadow: 1px 2px 3px black;
+#fernando-pessoa p{
+ 
 }
-aside#Vinicius{
-  background: url('pexels-aleksandar-pasaric-2603464.jpg') no-repeat;
-  background-size: cover;
+div.sombra {
+  position: relative;
+      border-radius: 20px;
+      height: 100%;
+}
+p {
+      background-color: #000000aa;
+      width: 400px;
+      margin-top: 10px;
+     margin: auto;
+      padding: 10px;
+      text-shadow: 1px 2px 3px black;
+     
+}
+aside#Vinicius {
+      background: url("imagens/pexels-aleksandar-pasaric-2603464.jpg") no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      text-shadow: 1px 2px 3px black;
+      margin: 0 0 100px 0;
 }
 
-
+#Augusto {
+  display: flex;
+ justify-content: center;
+  align-items: center;
+      background: url("imagens/pexels-pratik-gupta-2748716.jpg") no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      text-shadow: 1px 2px 3px black;
+}
