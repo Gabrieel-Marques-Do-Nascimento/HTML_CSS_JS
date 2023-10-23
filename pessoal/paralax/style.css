@@ -3,7 +3,7 @@
     padding: 0%;
 }
 body,html{
-    background: rgb(213, 213, 213);
+    background: rgb(0,0,0);
     min-height: 100vh;
 }
 article{
@@ -38,10 +38,9 @@ aside#fernado-pessoa{
   background-color: #0000005d;
        text-shadow: 1px 2px 3px black;
 }
-#fernado-pessoa  span {
-    
-
+aside#Vinicius{
+  background: url('pexels-aleksandar-pasaric-2603464.jpg') no-repeat;
+  background-size: cover;
 }
-aside.imagem{
 
-}
+
