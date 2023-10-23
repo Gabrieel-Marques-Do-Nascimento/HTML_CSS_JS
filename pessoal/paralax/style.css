@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: rgb(213, 213, 213);
+}
+article{
+    background: rgb(234, 232, 232);
+    margin: auto;
+    width: 80%;
+   
+}
+aside{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+     padding: 10px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+.fernado-pessoa{
+    color: azure;
+ 
+    background: url("imagens/pexels-jay-pizzle-3802510.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+.fernado-pessoa p{
+       text-shadow: 0px 2px 3px;;
+}
+.fernado-pessoa  span {
+    text-shadow: 1px 2px 3px black;
+
+}
