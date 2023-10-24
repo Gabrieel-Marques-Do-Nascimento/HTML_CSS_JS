@@ -9,7 +9,8 @@ html {
       margin: auto;
 }
 article {
-      background: rgb(0, 0, 0);
+      
+      background: rgb(71, 70, 70);
       margin: auto;
       color: white;
 }
@@ -23,36 +24,32 @@ aside {
 aside#fernando-pessoa {
       margin: auto;
       padding: 0;
-      background: white url("imagens/pexels-antoni-shkraba-4348401.jpg")
-            no-repeat;
+      background: white url("imagens/2.jpg") no-repeat;
       background-size: cover;
-     background-attachment: fixed;
-     margin: 0 0 100px 0;
-    /*alinhar o filho no centro*/  
-  display: flex;
-   justify-content: center;
-   align-items: center;
-      
+      background-attachment: fixed;
+      margin: 0 0 100px 0;
+      /*alinhar o filho no centro*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
-#fernando-pessoa p{
-   
+#fernando-pessoa p {
 }
 div.sombra {
-  position: relative;
-      border-radius: 20px;
-      height: 100%;
+      position: relative;
+     
+
 }
 p {
-      background-color: #000000aa;
+      background-color: #000000ae;
       width: 400px;
       margin-top: 10px;
-     margin: auto;
+      margin: auto;
       padding: 10px;
       text-shadow: 1px 2px 3px black;
-     
 }
 aside#Vinicius {
-      background: url("imagens/pexels-aleksandar-pasaric-2603464.jpg") no-repeat;
+      background: url("imagens/1.jpg") no-repeat;
       background-size: cover;
       background-attachment: fixed;
       text-shadow: 1px 2px 3px black;
@@ -60,11 +57,20 @@ aside#Vinicius {
 }
 
 #Augusto {
-  display: flex;
- justify-content: center;
-  align-items: center;
-      background: url("imagens/pexels-pratik-gupta-2748716.jpg") no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url("imagens/3.jpg") no-repeat;
       background-size: cover;
       background-attachment: fixed;
       text-shadow: 1px 2px 3px black;
+}
+a {
+      display: flex;
+      justify-content: center;
+      color: rgb(255, 239, 239);
+      text-decoration: none;
+}
+a:hover {
+      text-decoration: underline;
 }
