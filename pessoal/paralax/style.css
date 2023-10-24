@@ -59,8 +59,8 @@ aside#Vinicius {
 #Augusto {
       display: flex;
       justify-content: center;
-      align-items: center;
       background: url("imagens/3.jpg") no-repeat center center;
+      align-items: center;
       background-size: cover;
       background-attachment: fixed;
       text-shadow: 1px 2px 3px black;
