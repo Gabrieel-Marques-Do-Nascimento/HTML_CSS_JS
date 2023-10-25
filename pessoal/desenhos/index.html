@@ -13,12 +13,177 @@
                   <h1></h1>
             </header>
             <main>
-                  <div class="desenho"><img src="" alt="" /></div>
-                  <div class="desenho"><img src="" alt="" /></div>
-                  <div class="desenho"><img src="" alt="" /></div>
-                  <div class="desenho"><img src="" alt="" /></div>
-                  <div class="desenho"><img src="" alt="" /></div>
-                  <div class="desenho"><img src="" alt="" /></div>
+                  <style>
+                        body {
+                              margin: 0%;
+                              padding: 0%;
+                        }
+                        .container {
+                              width: 700px;
+                              height: 600px;
+                              overflow: hidden;
+                              margin: 0 auto 0 auto;
+                              text-align: center;
+                        }
+                        .desenho {
+                              width: 2400px;
+                              max-height: 600px;
+                              max-height: 600px;
+                              position: relative;
+                              -webkit-transition: left 2s;
+                              -moz-transition: left 2s;
+                              -o-transition: left 2s;
+                              transition: left 2s;
+                        }
+
+                        #meni {
+                              width: 2400px;
+                              max-height: 600px;
+                        }
+
+                        .slide-imagem {
+                              width: 700px;
+                              float: left;
+                              margin: 0%;
+                              padding: 0%;
+                        }
+                        .buttom-container {
+                              top: -40px;
+                              position: relative;
+                        }
+                        .slide-buttom {
+                              display: inline-block;
+                              height: 10px;
+                              width: 10px;
+                              border-radius: 5px;
+                              border: 1px solid rgb(255, 255, 255);
+                              margin: 4px;
+                        }
+                        #slide-imagem-1:target ~ .desenho {
+                              left: 0%;
+                        }
+                        #slide-imagem-2:target ~ .desenho {
+                              left: -700px;
+                        }
+                        #slide-imagem-3:target ~ .desenho {
+                              left: -1400px;
+                        }
+                        #slide-opala-1:target ~ .desenho {
+                              left: 0%;
+                        }
+                        #slide-opala-2:target ~ .desenho {
+                              left: -700px;
+                        }
+                        #slide-opala-3:target ~ .desenho {
+                              left: -1400px;
+                        }
+                  </style>
+                  <div class="container">
+                        <span id="slide-imagem-1"></span>
+                        <span id="slide-imagem-2"></span>
+                        <span id="slide-imagem-3"></span>
+                        <div class="desenho" id="meni">
+                              <img
+                                    class="slide-imagem"
+                                    src="image/meninas 3.jpg"
+                                    alt="meninas"
+                              />
+                              <img
+                                    class="slide-imagem"
+                                    src="image/meninas 2.jpg"
+                                    alt="meninas"
+                              /><img
+                                    class="slide-imagem"
+                                    src="image/meninas.jpg"
+                                    alt="meninas"
+                              />
+                        </div>
+                        <div class="buttom-container">
+                              <a
+                                    href="#slide-imagem-1"
+                                    class="slide-buttom"
+                              ></a>
+                              <a
+                                    href="#slide-imagem-2"
+                                    class="slide-buttom"
+                              ></a>
+                              <a
+                                    href="#slide-imagem-3"
+                                    class="slide-buttom"
+                              ></a>
+                        </div>
+                        <div class="desenho">
+                              <img src="" alt="" /><img src="" alt="" />
+                        </div>
+                        <div class="desenho">
+                              <img src="" alt="" /><img src="" alt="" /><img
+                                    src=""
+                                    alt=""
+                              /><img src="" alt="" />
+                        </div>
+                  </div>
+                  <div class="container" id="opala">
+                        <span id="slide-opala-1"></span
+                        ><span id="slide-opala-2"></span
+                        ><span id="slide-opala-3"></span>
+                        <div class="desenho">
+                              <img
+                                    src="image/opala (5).jpg"
+                                    alt=""
+                                    class="slide-imagem"
+                              />
+                              <img
+                                    src="image/opala (3).jpg"
+                                    alt=""
+                                    class="slide-imagem"
+                              />
+                              <img
+                                    src="image/opala (1).jpg"
+                                    alt=""
+                                    class="slide-imagem"
+                              />
+                        </div>
+                        <div class="buttom-container">
+                              <a href="#slide-opala-1" class="slide-buttom"></a
+                              ><a href="#slide-opala-2" class="slide-buttom"></a
+                              ><a
+                                    href="#slide-opala-3"
+                                    class="slide-buttom"
+                              ></a>
+                        </div>
+                  </div>
+
+                  <div class="container-2">
+                        <input
+                              type="radio"
+                              name="buttom-container-1"
+                              id="buttom-1"
+                        /><input
+                              type="radio"
+                              name="buttom-container-1"
+                              id="buttom-2"
+                        />
+                        <div class="slide-image">
+                              <img src="image/cavalo (1).jpg" alt="" />
+                        </div>
+                        <div class="slide-image">
+                              <img src="image/cavalo (2).jpg" alt="" />
+                        </div>
+                        <div class="buttom">
+                              <label for="buttom-1">exempl</label>
+                              <label for="buttom-2">exempl</label>
+                        </div>
+                  </div>
+                  <style>
+                        .container-2 {
+                              width: 200%;
+                             display: block;
+                              height: 100vh;overflow: hidden;
+                        }
+                        .slide-image {
+
+                        }
+                  </style>
             </main>
             <footer><p></p></footer>
       </body>

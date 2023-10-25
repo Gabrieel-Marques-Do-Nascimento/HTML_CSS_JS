@@ -1,17 +1,19 @@
 @charset "UTF-8";
 body{
-
+ margin: 0%;
+ padding: 0;
 }
 
 .slide-container {/*nas classes vou usar o mesmo tamanho da imagem ou que eu quero q seja*/
       width: 700px;
       height: 700px;
       margin-left: auto;
+      /*centralizar*/
       margin-right: auto;
-      overflow: hidden;
+      overflow: hidden;/* se deve ou nao ter scroll ou transbordar*/
       text-align: center;
 }
-.imagem {
+.imagens {
       width: 2400px; /*imagem container tem q ter o tamanho combinado de todos as imagems  combinadas*/
       max-height: 700px;
       position: relative;
@@ -21,7 +23,7 @@ body{
       -o-transition: left 2s;/*opera mini*/
        transition: left 2s;/* padrao*/
 }
-.slide-imagem {
+.slide-imagem {/*imagen 1 2 e 3*/
         width: 700px;
       float: left;
       margin: 0%;
@@ -39,13 +41,13 @@ body{
       background-color: rgb(255, 255, 255);
       margin:1px;
 }
-#slide-imagem-1:target ~ .imagem {
+#slide-imagem-1:target ~ .imagens {
       left: 0%;
 }
-#slide-imagem-2:target ~ .imagem {
+#slide-imagem-2:target ~ .imagens {
     left: -700px;
 }
-#slide-imagem-3:target ~ .imagem {
+#slide-imagem-3:target ~ .imagens {
         left: -1400px;
 }
 a{
