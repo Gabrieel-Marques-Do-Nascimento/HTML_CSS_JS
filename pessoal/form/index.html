@@ -5,7 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form login</title>
 </head>
-<body>
+<style>
+    body{
+        text-align: center;
+    }
+    .aling{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto; 
+        
+    }
+    h1{
+       
+    }
+     a{
+        padding: 10px;
+    height: 10px;
+    border: 1px solid ;
+    margin:3px;
+
+   }
+/*telas grandes*/
+@media screen and (min-width:992px) {
+    .aling{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }  
+   h1{
+    width: 40%;
+   }
+    form{
+        width: 40%;
+    }
+  input{
+
+    margin: 10px;
+  }
+  
+}
+
+
+</style>
+<body>   <div class="aling">
+     <h1>DRAWING</h1>
+        <form action="form.php" method="post">
     
+            <input type="email" name="email" id="iemail" placeholder="Email" required autocomplete="">
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required autocomplete="">
+            <input type="submit" value="ENTRAR" lang="pt">
+            <a href="#">Equeceu a senha</a>
+            <a href="#">criar nova conta</a>
+        </form>
+</div>
 </body>
 </html>
