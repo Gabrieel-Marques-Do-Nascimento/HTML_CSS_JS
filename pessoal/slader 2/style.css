@@ -1,75 +1,74 @@
 @charset "UTF-8";
-body{
-    margin: 0%;
-    padding: 0%;
-    height: 100vh;
-    /*toda altura e laargura*/
-    width: 100vw;
-    background: linear-gradient(78deg, rgb(148, 255, 148) 1%, #8956f3 99%);
+body {
+      margin: 0%;
+      padding: 0%;
+      height: 100vh;
+      /*toda altura e laargura*/
+      width: 100vw;
+      background: linear-gradient(78deg, rgb(148, 255, 148) 1%, #8956f3 99%);
 }
-.principal{
-    width: 935px;
-     /* altura e laargura especifica */
-    height: 520px;
-    border-radius: 2px;
-    overflow: hidden;/* sem rolagem lateral*/
-    position: absolute;/*sai do fluxo natural */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.principal {
+      width: 935px;
+      /* altura e laargura especifica */
+      height: 520px;
+      border-radius: 2px;
+      overflow: hidden; /* sem rolagem lateral*/
+      position: absolute; /*sai do fluxo natural */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 }
-.navigation{
-   
-    position: absolute;/*sai do fluxo natural */
-    bottom: 20px;
-   /*  */
-    left: 50%;
-    transform: translate(-50%); display: flex;
+.navigation {
+      position: absolute; /*sai do fluxo natural */
+      bottom: 20px;
+     
+      left: 50%;
+      transform: translate(-50%);
+      display: flex; /* alinhar um do lado do outro  */
 }
-label{
-    transition: .4s;
-    width: 70px;
-    height: 17px;
-     border: white solid 2px;
-     border-radius: 5px;
-     cursor: pointer;
-     margin: 5px;
+label {/* onde clica pra mudar o slide*/
+      transition: 0.4s;
+      width: 70px;
+      height: 17px;
+      border: white solid 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
 }
-label:hover{
-    background-color: azure;
+label:hover {
+      background-color: azure;
 }
-input{
-    display: none;
+input[type="radio"]{
+      display: none;
 }
-.slides{
-    display: flex;
-    flex-direction: row;
-    width: 500%;
-    height: 100%;
+.slides {
+      display: flex;
+      flex-direction: row;
+      width: 500%;
+      height: 100%;
 }
-.imagen{ /*imagens com tamanho de 20 porsento*/
-    width: 20%;
-    transition:.6s;
-
+.imagen {
+      /*imagens com tamanho de 20 porsento*/
+      width: 20%;
+      transition: 0.6s;
 }
 .imagen img {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
 }
 
-
-#slide1:checked ~ .s1{
-    margin-left: 0%;
+#slide1:checked ~ .s1 {
+      margin-left: 0%;
 }
-#slide2:checked ~ .s1{
-    margin-left: -20%;
+#slide2:checked ~ .s1 {
+      margin-left: -20%;
 }
-#slide3:checked ~ .s1{
-    margin-left: -40%;
+#slide3:checked ~ .s1 {
+      margin-left: -40%;
 }
-#slide4:checked ~ .s1{
-    margin-left: -60%;
-} 
-#slide5:checked ~ .s1{
-    margin-left: -80%;
+#slide4:checked ~ .s1 {
+      margin-left: -60%;
+}
+#slide5:checked ~ .s1 {
+      margin-left: -80%;
 }
