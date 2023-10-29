@@ -196,11 +196,11 @@ footer a {
     }
     
     .container-2 {
-        width: 600px;
+        max-width: 600px;
        
     }
     .slide-image > img {
-        width: 600px;
+        max-width: 600px;
     }
 
 
