@@ -1,0 +1,226 @@
+body {
+  
+    margin: 0%;
+    padding: 0%;
+    width: 99vw;
+    height: 100%;
+    background: linear-gradient(
+          78deg,
+          rgb(165, 209, 252) 1%,
+          rgb(253, 164, 164) 99%
+    );
+}
+.container {
+    max-width: 700px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.desenho {
+    width: 2400px;
+    max-height: 600px;
+  
+    position: relative;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+
+#meni {
+    width: 2400px;
+    max-height: 600px;
+}
+
+.slide-imagem {
+    max-width: 700px;
+    float: left;
+    margin: 0%;
+    padding: 0%; 
+}
+.buttom-container {
+    top: -40px;
+    position: relative;
+}
+.slide-buttom {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 4px;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+#slide-imagem-1:target ~ .desenho {
+    left: 0%;
+}
+#slide-imagem-2:target ~ .desenho {
+    left: -700px;
+}
+#slide-imagem-3:target ~ .desenho {
+    left: -1400px;
+}
+
+#slide-opala-1:target ~ .desenho {
+    left: 0%;
+}
+#slide-opala-2:target ~ .desenho {
+    left: -700px;
+}
+#slide-opala-3:target ~ .desenho {
+    left: -1400px;
+}
+
+
+/*slide paralax*/
+
+.container-2 {
+    max-width: 700px;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+input[type="radio"] {
+    display: none;
+}
+.slide-image {
+    width: 200%;
+    transition: 2s;
+}
+.slide-image > img {
+    max-width: 700px;
+}
+.buttom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin: 10px;
+    transform: translate(-50%);
+    display: flex;
+}
+label {
+    margin: 4px;
+    padding: 5px;
+    width: 20px;
+    height: 10px;
+    border: 2px solid rgb(253, 253, 253);
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.4s;
+}
+label:hover,
+.slide-buttom:hover {
+    background-color: azure;
+}
+#buttom-1:checked ~ .slide-image {
+    margin-left: 0%;
+}
+#buttom-2:checked ~ .slide-image {
+    margin-left: -50%;
+}
+
+footer {
+                  
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: black;
+
+    bottom: -15px;
+    width: 100%;
+}
+footer > * {
+    padding: 4px;
+}
+footer a {
+   
+    color: white;
+    text-decoration: none;
+}
+
+
+/*mobale fist*/
+@media screen and (min-width:280px) and (max-width:700px){
+    body {
+        width: 97vw;
+        background: linear-gradient(
+            78deg,
+            rgb(65, 64, 64) 1%,
+            rgb(208, 208, 208) 99%
+      );
+    }
+    .container {
+      
+        max-width: 600px;
+    }
+    .desenho {
+        width: 2000px;
+       
+    }
+    
+    #meni {
+        width: 2000px;
+
+    }
+    
+    .slide-imagem {
+        max-width: 600px;
+    }
+    #slide-imagem-1:target ~ .desenho {
+        left: 0%;
+    }
+    #slide-imagem-2:target ~ .desenho {
+        left: -600px;
+    }
+    #slide-imagem-3:target ~ .desenho {
+        left: -1200px;
+    }
+    
+    #slide-opala-1:target ~ .desenho {
+        left: 0%;
+    }
+    #slide-opala-2:target ~ .desenho {
+        left: -600px;
+    }
+    #slide-opala-3:target ~ .desenho {
+        left: -1200px;
+    }
+    
+    .container-2 {
+        width: 600px;
+       
+    }
+    .slide-image > img {
+        width: 600px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

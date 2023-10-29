@@ -7,79 +7,13 @@
                   content="width=device-width, initial-scale=1.0"
             />
             <title>DESENHOS</title>
+            <link rel="stylesheet" href="estilo.css">
       </head>
       <body>
             <header>
                   <h1></h1>
             </header>
             <main>
-                  <style>
-                        body {
-                              margin: 0%;
-                              padding: 0%;
-                              width: 97vw;
-                              height: 100%;
-                              background: linear-gradient(
-                                    78deg,
-                                    gray 1%,
-                                    white 99%
-                              );
-                        }
-                        .container {
-                              width: 700px;
-                              height: 600px;
-                              overflow: hidden;
-                              margin: 0 auto 0 auto;
-                              text-align: center;
-                        }
-                        .desenho {
-                              width: 2400px;
-                              max-height: 600px;
-
-                              position: relative;
-                              -webkit-transition: 3s;
-                              -moz-transition: 3s;
-                              -o-transition: 3s;
-                              transition: 3s;
-                        }
-
-                        #meni {
-                              width: 2400px;
-                              max-height: 600px;
-                        }
-
-                        .slide-imagem {
-                              width: 700px;
-                              float: left;
-                              margin: 0%;
-                              padding: 0%;
-                        }
-                        .buttom-container {
-                              top: -40px;
-                              position: relative;
-                        }
-                        .slide-buttom {
-                              display: inline-block;
-                              height: 20px;
-                              width: 30px;
-                              border-radius: 5px;
-                              border: 1px solid rgb(255, 255, 255);
-                              margin: 4px;
-                              -webkit-transition: left 2s;
-                              -moz-transition: left 2s;
-                              -o-transition: left 2s;
-                              transition: left 2s;
-                        }
-                        #slide-imagem-1:target ~ .desenho {
-                              left: 0%;
-                        }
-                        #slide-imagem-2:target ~ .desenho {
-                              left: -700px;
-                        }
-                        #slide-imagem-3:target ~ .desenho {
-                              left: -1400px;
-                        }
-                  </style>
                   <div class="container">
                         <span id="slide-imagem-1"></span>
                         <span id="slide-imagem-2"></span>
@@ -115,17 +49,7 @@
                               ></a>
                         </div>
                   </div>
-                  <style>
-                        #slide-opala-1:target ~ .desenho {
-                              left: 0%;
-                        }
-                        #slide-opala-2:target ~ .desenho {
-                              left: -700px;
-                        }
-                        #slide-opala-3:target ~ .desenho {
-                              left: -1400px;
-                        }
-                  </style>
+              
                   <div class="container" id="opala">
                         <span id="slide-opala-1"></span
                         ><span id="slide-opala-2"></span
@@ -161,11 +85,11 @@
                         <input
                               type="radio"
                               name="buttom-container-1"
-                              id="buttom-1"
+                              id="buttom-1" placeholder="1"
                         /><input
                               type="radio"
                               name="buttom-container-1"
-                              id="buttom-2"
+                              id="buttom-2" placeholder="0"
                         />
                         <div class="slide-image">
                               <img src="image/cavalo (1).jpg" alt="" />
@@ -178,81 +102,11 @@
                               <label for="buttom-2"></label>
                         </div>
                   </div>
-                  <style>
-                        .container-2 {
-                              width: 700px;
-                              display: flex;
-                              height: 100%;
-                              overflow: hidden;
-                              position: relative;
-
-                              left: 50%;
-                              transform: translate(-50%);
-                        }
-                        input[type="radio"] {
-                              display: none;
-                        }
-                        .slide-image {
-                              width: 200%;
-                              transition: 2s;
-                        }
-                        .slide-image > img {
-                              width: 700px;
-                        }
-                        .buttom {
-                              position: absolute;
-                              bottom: 20px;
-                              left: 50%;
-                              margin: 10px;
-                              transform: translate(-50%);
-                              display: flex;
-                        }
-                        label {
-                              margin: 4px;
-                              padding: 5px;
-                              width: 20px;
-                              height: 10px;
-                              border: 2px solid rgb(253, 253, 253);
-                              border-radius: 5px;
-                              cursor: pointer;
-
-                              transition: all 0.4s;
-                        }
-                        label:hover,
-                        .slide-buttom:hover {
-                              background-color: azure;
-                        }
-                        #buttom-1:checked ~ .slide-image {
-                              margin-left: 0%;
-                        }
-                        #buttom-2:checked ~ .slide-image {
-                              margin-left: -50%;
-                        }
-                  </style>
+                 
             </main>
             <footer>
                   <p>Artista <a href="#">Gabriel Marques</a></p>
             </footer>
-            <style>
-                  footer {
-                  
-                        position: relative;
-                        color: white;
-                        text-align: center;
-                        background-color: black;
-                        position: relative;
-                        bottom: -15px;
-                        padding:0 10px 0  15px;
-                        width: 100%;
-                  }
-                  footer > * {
-                        padding: 4px;
-                  }
-                  footer a {
-                       
-                        color: white;
-                        text-decoration: none;
-                  }
-            </style>
+           
       </body>
 </html>
