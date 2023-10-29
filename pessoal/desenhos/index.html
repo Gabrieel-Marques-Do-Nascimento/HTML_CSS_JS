@@ -19,7 +19,11 @@
                               padding: 0%;
                               width: 97vw;
                               height: 100%;
-                               background: linear-gradient(78deg, gray 1% , white 99%);
+                              background: linear-gradient(
+                                    78deg,
+                                    gray 1%,
+                                    white 99%
+                              );
                         }
                         .container {
                               width: 700px;
@@ -31,12 +35,12 @@
                         .desenho {
                               width: 2400px;
                               max-height: 600px;
-                             
+
                               position: relative;
-                              -webkit-transition:  2s;
-                              -moz-transition:  2s;
-                              -o-transition:  2s;
-                              transition:  2s;
+                              -webkit-transition: 3s;
+                              -moz-transition: 3s;
+                              -o-transition: 3s;
+                              transition: 3s;
                         }
 
                         #meni {
@@ -61,9 +65,11 @@
                               border-radius: 5px;
                               border: 1px solid rgb(255, 255, 255);
                               margin: 4px;
-                            transition: .4s;
+                              -webkit-transition: left 2s;
+                              -moz-transition: left 2s;
+                              -o-transition: left 2s;
+                              transition: left 2s;
                         }
-                        .slide-buttom
                         #slide-imagem-1:target ~ .desenho {
                               left: 0%;
                         }
@@ -71,15 +77,6 @@
                               left: -700px;
                         }
                         #slide-imagem-3:target ~ .desenho {
-                              left: -1400px;
-                        }
-                        #slide-opala-1:target ~ .desenho {
-                              left: 0%;
-                        }
-                        #slide-opala-2:target ~ .desenho {
-                              left: -700px;
-                        }
-                        #slide-opala-3:target ~ .desenho {
                               left: -1400px;
                         }
                   </style>
@@ -117,8 +114,18 @@
                                     class="slide-buttom"
                               ></a>
                         </div>
-                      
                   </div>
+                  <style>
+                        #slide-opala-1:target ~ .desenho {
+                              left: 0%;
+                        }
+                        #slide-opala-2:target ~ .desenho {
+                              left: -700px;
+                        }
+                        #slide-opala-3:target ~ .desenho {
+                              left: -1400px;
+                        }
+                  </style>
                   <div class="container" id="opala">
                         <span id="slide-opala-1"></span
                         ><span id="slide-opala-2"></span
@@ -149,7 +156,7 @@
                               ></a>
                         </div>
                   </div>
-
+                  <!--slide com paralax -->
                   <div class="container-2">
                         <input
                               type="radio"
@@ -174,48 +181,72 @@
                   <style>
                         .container-2 {
                               width: 700px;
-                             display: flex;
+                              display: flex;
                               height: 100%;
                               overflow: hidden;
-                               position: relative;
-                            
+                              position: relative;
+
                               left: 50%;
                               transform: translate(-50%);
                         }
-                        input[type="radio"]{
+                        input[type="radio"] {
                               display: none;
                         }
                         .slide-image {
                               width: 200%;
-                              
-                              
+                              transition: 2s;
                         }
                         .slide-image > img {
                               width: 700px;
                         }
-                        .buttom{
+                        .buttom {
                               position: absolute;
-                             bottom: 20px;
+                              bottom: 20px;
                               left: 50%;
                               margin: 10px;
                               transform: translate(-50%);
                               display: flex;
                         }
-                        label{
-                              margin: 2px;
-                             padding: 5px;
-                             width: 20px;
-                             height: 10px;
+                        label {
+                              margin: 4px;
+                              padding: 5px;
+                              width: 20px;
+                              height: 10px;
                               border: 2px solid rgb(253, 253, 253);
+                              border-radius: 5px;
                               cursor: pointer;
-                              transition: all .4s;
-                  
+
+                              transition: all 0.4s;
                         }
-                        label:hover,.slide-buttom:hover{
+                        label:hover,
+                        .slide-buttom:hover {
                               background-color: azure;
+                        }
+                        #buttom-1:checked ~ .slide-image {
+                              margin-left: 0%;
+                        }
+                        #buttom-2:checked ~ .slide-image {
+                              margin-left: -50%;
                         }
                   </style>
             </main>
-            <footer><p></p></footer>
+            <footer><p>Artista <a href="#">Gabriel Marques</a></p></footer>
+            <style>
+                  footer{
+                        color: white;
+                        text-align: center;
+                        background-color: black;
+                       
+                  }
+                  footer > *{
+                  padding: 4px;
+                  margin: 0;
+                  }
+                  footer  a {
+                        color: white;
+                        text-decoration:none ;
+                       
+                  }
+            </style>
       </body>
 </html>
