@@ -1,67 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form login</title>
-</head>
-<style>
-    body{
-        text-align: center;
-    }
-    .aling{
-        display: flex;
-        flex-direction: column;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: auto; 
-        
-    }
-    h1{
-       
-    }
-     a{
-        padding: 10px;
-    height: 10px;
-    border: 1px solid ;
-    margin:3px;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>form login</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(233, 233, 233);
+            text-align: center;
+        }
+        .aling {
+            position: relative;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+                      align-items: center;
+                      top: 50%;
+                left: 50%;
+                margin: 0%;
+                transform: translate(-50%, -50%);
+           
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+         
+        }
+        form * {
+            position: relative;
+            padding: 5px;
+            margin: 3px 0 3px 0;
+            height: 30px;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            height: 40px;
+            font-weight: 700;
+        }
+        h1 {
+        }
+        a {
+            color: black;
+         
+            padding: 5px 0 15px 0px;
+            height: 15px;
+            border: 1px solid;
+            margin: 3px 0 0 0;
+        }
+        a:hover {
+            background: linear-gradient(
+                78deg,
+                rgba(181, 212, 246, 0.567) 1%,
+                rgb(255, 152, 152) 99%
+            );
+        }
+        /*
+typical device braakpoints
+--------------------------------
+medidas w3c  
+-----------------------------------
+Pequenas telas ate 600px      // ja foi criado
+Celular : de 600px ate 768px  // ja foi criado
+Tablet: 768px ate 992px
+Desktop: 992                  (ate 1200px)
+Telas Grandes: acima de 1200px
+*/
 
-   }
-/*telas grandes*/
-@media screen and (min-width:992px) {
-    .aling{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-    }  
-   h1{
-    width: 40%;
-   }
-    form{
-        width: 40%;
-    }
-  input{
-
-    margin: 10px;
-  }
-  
-}
-
-
-</style>
-<body>   <div class="aling">
-     <h1>DRAWING</h1>
-        <form action="form.php" method="post">
-    
-            <input type="email" name="email" id="iemail" placeholder="Email" required autocomplete="">
-            <input type="password" name="senha" id="isenha" placeholder="Senha" required autocomplete="">
-            <input type="submit" value="ENTRAR" lang="pt">
-            <a href="#">Equeceu a senha</a>
-            <a href="#">criar nova conta</a>
-        </form>
-</div>
-</body>
+        /*telas grandes*/
+        @media screen and (min-width: 768px) {
+            body {
+                background: linear-gradient(
+                    78deg,
+                    rgb(165, 209, 252) 20%,
+                    rgb(253, 164, 164) 80%
+                );
+            }
+            .aling {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+              
+            }
+            h1 {
+                position: relative;
+                font-size: 5vw;
+          
+                width: 30%;
+            }
+            form {
+                width: 50%;
+                max-width: 600px;
+            }
+            input,
+            a {
+                height: calc(20px + 1vw);
+                padding: 5px;
+            }
+            a{
+                padding: 10px 0 0 0;
+            }
+        }
+    </style>
+    <body>
+        <div class="aling">
+            <h1>DRAWING</h1>
+            <form action="form.php" method="post">
+                <input
+                    type="email"
+                    name="email"
+                    id="iemail"
+                    placeholder="Email"
+                    required
+                    autocomplete=""
+                />
+                <input
+                    type="password"
+                    name="senha"
+                    id="isenha"
+                    placeholder="Senha"
+                    required
+                    autocomplete=""
+                />
+                <input type="submit" value="ENTRAR" lang="pt" />
+                <a href="#">Equeceu a senha</a>
+                <a href="#">criar nova conta</a>
+            </form>
+        </div>
+    </body>
 </html>
