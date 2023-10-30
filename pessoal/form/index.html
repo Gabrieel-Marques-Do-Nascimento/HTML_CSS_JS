@@ -76,7 +76,7 @@ Desktop: 992                  (ate 1200px)
 Telas Grandes: acima de 1200px
 */
 
-<<<<<<< HEAD
+
         /*telas grandes*/
         @media screen and (min-width: 768px) {
             body {
@@ -123,6 +123,29 @@ Telas Grandes: acima de 1200px
                 font-weight: 600;
             }
         }
+         
+        #nova-conta{
+            position: absolute;
+            display: none;
+            background: #156efe;
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #criar-conta:target ~ #nova-conta{
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
     </style>
     <body>
         <div class="aling">
@@ -147,49 +170,19 @@ Telas Grandes: acima de 1200px
                 />
                 <input type="submit" value="ENTRAR" lang="pt" />
                 <a href="#">Equeceu a senha</a>
-                <a href="#">criar nova conta</a>
+                <a href="#" id="criar-conta">criar nova conta</a>
             </form>
+<div id="nova-conta">
+    
+                <form action="" method="post">
+    
+    
+                </form>
+</div>
+
+
         </div>
     </body>
 </html>
-=======
-   }
-/*telas grandes*/
-@media screen and (min-width:992px) {
-    .aling{
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-    }  
-   h1{
-    width: 40%;
-   }
-    form{
-        width: 40%;
-    }
-  input{
-
-    margin: 10px;
-  }
-  
-}
 
 
-</style>
-<body>   <div class="aling">
-     <h1>DRAWING</h1>
-        <form action="form.php" method="post">
-    
-            <input type="email" name="email" id="iemail" placeholder="Email" required autocomplete="">
-            <input type="password" name="senha" id="isenha" placeholder="Senha" required autocomplete="">
-            <input type="submit" value="ENTRAR" lang="pt">
-            <a href="#">Equeceu a senha</a>
-            <a href="#" id="nova" >criar nova conta</a>
-        </form>
-</div>
-<!--- form 2  criar nova conta display none  a#nova :target ~ form 2  display valor true sei la ---> 
-
-
-</body>
-</html>
->>>>>>> e099f791f762e24f67bf3046866be283078349b4
