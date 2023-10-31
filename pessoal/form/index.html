@@ -124,21 +124,23 @@ Telas Grandes: acima de 1200px
             a:hover{
                 font-weight: 600;
             }
-        }
          
-        #nova-conta{
+        }
+             .conta{
             position: absolute;
-            display: none;
+           
             background: #156efe;
-            width: 200px;
-            height: 200px;
+            width: 50%;
+            height: 400px;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+             display: none;
         }
-        #criar-conta:target ~ #nova-conta{
-            display: block;
+        #nova-conta:target {
+            display: flex;
         }
+       
 
 
 
@@ -172,9 +174,9 @@ Telas Grandes: acima de 1200px
                 />
                 <input type="submit" value="ENTRAR" lang="pt" />
                 <a href="#">Equeceu a senha</a>
-                <a href="#" id="criar-conta">criar nova conta</a>
+                <a href="#nova-conta" id="criar-conta">criar nova conta</a>
             </form>
-<div id="nova-conta">
+<div id="nova-conta" class="conta">
     
                 <form action="" method="post">
     
