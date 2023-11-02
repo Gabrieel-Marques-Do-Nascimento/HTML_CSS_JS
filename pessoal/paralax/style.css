@@ -28,7 +28,7 @@ aside#fernando-pessoa {
       background: white url("imagens/2.jpg") no-repeat center center;
       background-size: cover;
       background-attachment: fixed;
-      margin: 0 0 100px 0;
+      margin: 0 0 200px 0;
       /*alinhar o filho no centro*/
       display: flex;
       justify-content: center;
@@ -55,7 +55,7 @@ aside#Vinicius {
       background-size: cover;
       background-attachment: fixed;
       text-shadow: 1px 2px 3px black;
-      margin: 0 0 100px 0;
+      margin: 0 0 200px 0;
 }
 
 #Augusto {
