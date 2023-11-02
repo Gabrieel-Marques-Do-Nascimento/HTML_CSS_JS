@@ -119,27 +119,8 @@ Telas Grandes: acima de 1200px
         font-weight: 600;
       }
     }
-    .conta {
-      position: absolute;
-
-      background: #156efe;
-      width: 90%;
-      height: 400px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-    }
-    .conta:target {
-      display: flex;
-    }
-    #criar {
-      display: none;
-    }
-    input#criar[type="checkbox"]:checked ~ .conta {
-      display: flex;
-      background: red;
-    }
+    
+ 
   </style>
   <body>
     <div class="aling">
@@ -164,13 +145,8 @@ Telas Grandes: acima de 1200px
         />
         <input type="submit" value="ENTRAR" lang="pt" />
         <a href="#">Equeceu a senha</a>
-        <input type="checkbox" id="criar" />
-        <label for="criar">criar conta</label>
+        <a href="#">criar conta</a>
 <!--         <a href="#nova-conta" id="criar-conta">criar nova conta</a> -->
-
-        <div id="nova-conta" class="conta">
-          <input type="checkbox" name="ckeck" id="" placeholder="tt" />
-        </div>
       </form>
     </div>
   </body>
