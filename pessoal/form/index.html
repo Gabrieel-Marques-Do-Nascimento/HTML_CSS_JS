@@ -140,7 +140,13 @@ Telas Grandes: acima de 1200px
       .conta:target  {
             display: flex;
         } 
-  
+        #criar{
+          display: none;
+        }
+      input#criar[type="checkbox"]:checked ~ .conta{
+        display: flex;
+        background: red;
+      }
       
 
 
@@ -173,16 +179,18 @@ Telas Grandes: acima de 1200px
                 />
                 <input type="submit" value="ENTRAR" lang="pt" />
                 <a href="#">Equeceu a senha</a>
-               <input type="button" value="nova conta">
+               <input type="checkbox" id="criar">
+               <label for="criar">criar conta</label>
                 <a href="#nova-conta" id="criar-conta">criar nova conta</a>
-            </form>
-<div id="nova-conta" class="conta">
-    
-                <form action="" method="post">
+                
+                <div id="nova-conta" class="conta">
+                  
                     <input type="checkbox" name="ckeck" id="" placeholder="tt" >
-    
-                </form>
-</div>
+                    
+               </div>
+                
+            </form>
+
 
 
         </div>
