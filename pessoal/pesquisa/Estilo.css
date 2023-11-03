@@ -1,18 +1,20 @@
-*{ margin: 0;
+* {
+  margin: 0;
   padding: 0;
 }
-body{
+body {
   background: #97a1aea4;
 }
-form{
-
-  
+form {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
 }
-div{
+div {
   display: flex;
   /* flex-direction: ; */
+}
+div > input[type="radio"] + label{
+  align-items: center;
 }
