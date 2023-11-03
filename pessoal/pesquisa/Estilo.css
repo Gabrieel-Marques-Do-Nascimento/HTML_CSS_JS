@@ -1,0 +1,18 @@
+*{ margin: 0;
+  padding: 0;
+}
+body{
+  background: #97a1aea4;
+}
+form{
+
+  
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+div{
+  display: flex;
+  /* flex-direction: ; */
+}
