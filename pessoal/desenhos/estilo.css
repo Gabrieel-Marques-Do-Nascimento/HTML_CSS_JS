@@ -10,6 +10,20 @@ body {
           rgb(253, 164, 164) 99%
     );
 }
+header{
+  color: white;
+        /* background: #156efe */
+        background: linear-gradient( 39deg , #156efe 1% ,rgb(253, 164, 164) 99%);
+        padding: 1px;
+        margin-bottom: 50px;
+}
+header > h1 {
+
+  margin: 10px;
+  margin-left: 20%;
+  font-size: calc(25px + 4vw);
+   
+}
 .container {
     max-width: 700px;
     height: 600px;
@@ -158,6 +172,15 @@ footer a {
             rgb(208, 208, 208) 99%
       );
     }
+    header{
+            background: linear-gradient( 39deg , #156efe 1% ,rgb(208, 208, 208) 99%);
+    }
+    header > h1 {
+
+  margin: 10px;
+  font-size: calc(28px + 6vw);
+   
+}
     .container {
       
         max-width: 600px;
