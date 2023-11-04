@@ -3,18 +3,68 @@
   padding: 0;
 }
 body {
+  font-size: 20px;
   background: #97a1aea4;
 }
 form {
-  position: relative;
+  width: 80vw;
+ position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%); 
 }
 div {
-  display: flex;
+  display: grid;
+  grid-template-columns: 7;
+  margin: 0 0 50px ;
   /* flex-direction: ; */
 }
-div > input[type="radio"] + label{
+.anime > input[type="radio"]{
+  grid-column: 2 ;
   align-items: center;
+}
+ .anime > label {
+   grid-column: 3;
+ }
+ .anime > #outros{
+   grid-column: 3/5;
+   width: 70%;
+   height: 20px;
+ }
+.prota {
+  display: grid;
+}
+.prota > input {
+  
+}
+.prota > label {
+  
+}
+select{
+  font-size: 22px;
+  width: 50%;
+  height: 40px;
+  
+}
+
+
+
+
+h1,h3,h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+input[type="submit"]{
+  
+  
+  width: 30vw;
+  min-height: 40px;
+  font-size: 30px;
+
+}
+
+.center{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
