@@ -125,30 +125,46 @@ Telas Grandes: acima de 1200px
   <body>
     <div class="aling">
       <h1>DRAWING</h1>
-      <form action="form.php" method="post">
+      <form >
         <input
-          type="email"
+          type="text"
           name="email"
           id="iemail"
           placeholder="Email"
-          required
-          autocomplete=""
+          
         />
         <input
           type="password"
           name="senha"
           id="isenha"
           placeholder="Senha"
-          required
-          autocomplete=""
-          minlength="8"
+          
         />
-        <input type="submit" value="ENTRAR" lang="pt" />
+        <input type="submit" onclick="entrar() return false"/>
         <a href="#">Equeceu a senha</a>
         <a href="#">criar conta</a>
 <!--         <a href="#nova-conta" id="criar-conta">criar nova conta</a> -->
       </form>
     </div>
-    <script src="code.js"></script>
+   <script type="text/javascript" charset="utf-8">
+   
+   
+   function entrar(){
+      var login = getElementById('iemail').value;
+      var senha = getElementById('isenha').value;
+      if (login == "Gabriel" && senha == "2108") {
+        alert("seja bem vindo administrador")
+        location.href = "https://gabrieel-marques-do-nascimento.github.io/HTML_CSS_JS/pessoal/desenhos/#slide-opala-3"
+      }
+      else{
+        alert('login ou senha incorreta')
+      }
+   }
+      
+      
+      
+      
+    </script> 
+<!--  <script src="code.js"></script> -->
   </body>
 </html>
