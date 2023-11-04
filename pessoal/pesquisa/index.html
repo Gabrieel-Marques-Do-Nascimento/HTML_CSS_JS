@@ -9,15 +9,16 @@
 
   <body>
     <header>
-      <h1>animes favoritos</h1>
+
+    </header>
+    <form action="" method="post">
+            <h1>animes favoritos</h1>
       <p>
         E uma pesquisa rapida sobre quais animes e perssonagens sao mais
         adorados pelo publico
       </p>
-    </header>
-    <form action="" method="post">
-      <h4>anime favorito</h4>
-      <div>
+      <h3>anime favorito</h3>
+      <div class="anime">
         <input type="radio" name="anime" id="bleach" />
         <label for="bleach">Bleach: Sennen Kessen-hen</label>
         <input type="radio" name="anime" id="slayer" />
@@ -28,12 +29,12 @@
         <label for="Shangri-La">Shangri-La Frontier</label>
         <input type="radio" name="anime" id="Dead Mount Death Play" />
         <label for="Dead Mount Death Play">Dead Mount Death Play</label>
-        <input type="text" name="anime" id="outros" value="" />
-        <label for="outros">outros</label>
-      </div>
+        <input type="text" name="anime" id="outros" value="" placeholder="OUTROS"/>
 
-      <div>
-        <h4>protagonistas favoritos</h4>
+      </div>
+        <h3>protagonistas favoritos</h3>
+      <div class="prota">
+
         <input type="checkbox" name="psn" id="gojo" />
         <label for="gojo">Satoru gojo</label>
         <input type="checkbox" name="psn" id="Ichigo" />
@@ -45,9 +46,10 @@
         <input type="checkbox" name="psn" id="Gintoki" />
         <label for="Gintoki">Gintoki</label>
       </div>
+              <h3>VILÃO FAVORITO</h3>
       <div>
-        <h3>VILÃO FAVORITO</h3>
-        <select name="" id="">
+
+        <select name="" class="center">
           <option value="a" selected="oi" disabled="">Escolha uma opção</option>
           <option value="aizen">Aizem</option>
           <option value="sukuna">Sukuna</option>
@@ -66,7 +68,7 @@
           required
         ></textarea>
       </div>
-      <input type="submit" name="enviar" id="enviar" value="enviar" />
+      <input type="submit" name="enviar" class="center"  id="enviar" value="enviar" />
     </form>
   </body>
 </html>
