@@ -4,9 +4,10 @@
 }
 body {
   font-size: 20px;
-  background: #97a1aea4;
+  background:black url('1580651501864435-0.png');
 }
 form {
+  background: #97a1aea4;
   width: 80vw;
  position: relative;
   top: 50%;
@@ -14,25 +15,24 @@ form {
   transform: translate(-50%); 
 }
 div {
-  display: grid;
-  grid-template-columns: 7;
+  
   margin: 0 0 50px ;
   /* flex-direction: ; */
 }
 .anime > input[type="radio"]{
-  grid-column: 2 ;
+  
   align-items: center;
 }
  .anime > label {
-   grid-column: 3;
+   
  }
  .anime > #outros{
-   grid-column: 3/5;
+   
    width: 70%;
    height: 20px;
  }
 .prota {
-  display: grid;
+  
 }
 .prota > input {
   
