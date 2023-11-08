@@ -10,12 +10,21 @@ body {
   background-size: cover;
   
 }
+header {
+  width: 90%;
+  color: white;
+  margin: auto;
+  
+ & > p{
+  margin: 0 15px;
+}
+}
 form {
   -webkit-text-stroke: 0.3px black;
   filter: grayscale(80%);
   background: #1e1e1eed;
   width: 90vw;
-  height: 100vh;
+  height: 100%;
   padding: 8px;
   margin: 10px;
   border-radius: 10px;
@@ -29,6 +38,21 @@ div {
   
   margin: 0 0 50px ;
   /* flex-direction: ; */
+
+}
+div > p,div > input{
+  margin:20PX;
+}
+textarea{
+  padding: 5px;
+  width: 90%;
+  
+}
+
+
+input[type="text"]{
+  padding: 10px;
+  font-size: 16px;
 }
 .anime > input[type="radio"]{
   
@@ -60,12 +84,14 @@ select{
 
 
 
-
 h1,h3,h4 {
+  padding: 0 0 10px 0;
   font-family: serif;
   text-align: center;
   text-transform: uppercase;
 }
+
+
 input[type="submit"]{
   
   
@@ -80,3 +106,4 @@ input[type="submit"]{
   left: 50%;
   transform: translate(-50%);
 }
+
