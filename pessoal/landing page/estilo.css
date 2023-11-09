@@ -1,65 +1,59 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background: #030404c2;
   text-align: center;
   width: 100vw;
-  
 }
 
-
-header{
+header {
   text-align: center;
-  background: url('imagens/fundo.png') no-repeat;
+  background: url("imagens/fundo.png") no-repeat;
   background-size: cover;
   color: white;
   height: 600px;
   & > div {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  & div {
+    background: #00000000;
+  }
+  & div > a {
+    background: #222020cc;
+    color: white;
+    box-shadow: 1px 1px 0px white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  & a:hover {
+    background: #ffffffcb;
+    color: black;
+    box-shadow: 1px 1px 0px #000000;
+  }
 }
-& div {
-  background: #00000000;
+header > {
 }
- & div > a {
-  background: #222020cc;
-  color: white;
-  box-shadow: 1px 1px 0px white;
-  padding: 20px;
-  text-decoration: none;
-  font-size: 17px;
-  
-
-}
-  & a:hover{
-   background: #ffffffcb;
-   color: black;
-   box-shadow: 1px 1px 0px #000000;
-   
- }
-}
-header > {}
-img{
+img {
   width: 100%;
 }
- div{
-   background: white;
- }
- div.img{
-   margin: 20px;
-   
-   
- }
-.img > h2,p{padding: 20px;}
+div {
+  background: white;
+}
+div.img {
+  margin: 20px;
+}
+.img > h2,
+p {
+  padding: 20px;
+}
 
-
-
-
-footer{
+footer {
   background: black;
   color: white;
 }
