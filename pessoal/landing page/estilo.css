@@ -12,6 +12,7 @@ header {
   text-align: center;
   background: url("imagens/fundo.png") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   height: 600px;
   & > div {
