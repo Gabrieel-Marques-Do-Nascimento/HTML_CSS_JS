@@ -25,9 +25,11 @@ header {
     background: #00000000;
   }
   & div > a {
+    display: inline-block;
     background: #222020cc;
     color: white;
     box-shadow: 1px 1px 0px white;
+    margin: 40px;
     padding: 20px;
     text-decoration: none;
     font-size: 17px;
@@ -38,8 +40,8 @@ header {
     box-shadow: 1px 1px 0px #000000;
   }
 }
-header > {
-}
+/* header > { 
+}   */
 img {
   width: 100%;
 }
@@ -62,4 +64,7 @@ footer > p >  a{
   text-decoration: none;
   color: #3e3ee4;
 }
+
+
+
 
