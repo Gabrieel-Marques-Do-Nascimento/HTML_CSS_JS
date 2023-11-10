@@ -98,8 +98,17 @@ footer > p > a {
       grid-row: 2;
       margin: 0 10px;
     }
+  
   }
-
+  main{
+    display: flex;
+  }
+   .img{
+      grid-row:3;
+    }
+img{
+  width: 100%;
+}
     
   }
   
