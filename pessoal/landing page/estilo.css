@@ -60,9 +60,13 @@ footer {
   background: black;
   color: white;
 }
-footer > p >  a{
+footer > p > a {
   text-decoration: none;
   color: #3e3ee4;
+}
+
+@media screen and (min-width:720px){
+  
 }
 
 
