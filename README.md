@@ -16,7 +16,7 @@
 <a href="https://raw.githubusercontent.com/Gabrieel-Marques-Do-Nascimento/novo-projeto/main/portifolio/imagens/favicon.ico"> iconi de trabalho<a>
 
 
-
+<a href="https://gabrieel-marques-do-nascimento.github.io/HTML_CSS_JS/pessoal/landing%20page/Index.html">layout grid</>
 
 
 
