@@ -72,6 +72,7 @@ footer {
   color: white;
   padding: 0px;
   & > p{
+    padding: 0;
   margin: 0; 
 }
 }
@@ -80,7 +81,12 @@ footer  a {
   text-decoration: none;
   color: #3e3ee4;
 }
-
+.b1{
+  padding: 15px 0 0 0;
+}
+.b2{
+  padding: 0 0 16px 0;
+}
 @media screen and (min-width:720px){
 
   body{
