@@ -41,12 +41,6 @@ header {
   }
   
 }
-footer > p:nth-child(1){
-    padding: 10px 0 0 0;
-  }
-  footer > p:nth-child(2){
-    padding: 0 0 10px 0;
-  }
 /* header > { 
 }   */
 .dev{
@@ -81,7 +75,14 @@ footer {
   margin: 0; 
   padding: 0;
 }
+
 }
+footer > p:nth-child(1){
+    padding: 10px 0 0 0;
+  }
+  footer > p:nth-child(2){
+    padding: 0 0 10px 0;
+  }
 footer > p > a {
   text-decoration: none;
   color: #3e3ee4;
