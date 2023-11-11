@@ -102,14 +102,21 @@ footer > p > a {
   }
   main{
     display: flex;
+    /* margin: 0 40px */;
   }
-   .img{
+   .img{  
+  
+     width: 25%;
       grid-row:3;
+      
+    
     }
 img{
   width: 100%;
 }
-    
+p{
+  font-size: 19px;
+}    
   }
   
   
