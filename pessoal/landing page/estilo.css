@@ -102,21 +102,26 @@ footer > p > a {
   }
   main{
     display: flex;
-    /* margin: 0 40px */;
+  justify-content: center;
   }
    .img{  
-  
      width: 25%;
-      grid-row:3;
-      
-    
+    & > h2{
+     margin: 10px 0 10px 0;
+   }
+    }
+    .img > p{
+      margin: 0 0 20px 0;
     }
 img{
   width: 100%;
 }
 p{
   font-size: 19px;
-}    
+}  
+main ~ div {
+  padding: 30px 10px 30px 10px;
+}
   }
   
   
