@@ -73,17 +73,15 @@ footer {
   padding: 0px;
   & > p{
   margin: 0; 
-  padding: 0;
 }
-
 }
-footer > p:nth-child(1){
-    padding: 10px 0 0 0;
+footer > p:nth-child(2){
+    padding: 15px 0 0 0;
   }
-  footer > p:nth-child(2){
-    padding: 0 0 10px 0;
+  footer > p:nth-child(1){
+    padding: 0 0 15px 0;
   }
-footer > p > a {
+footer  a {
   text-decoration: none;
   color: #3e3ee4;
 }
