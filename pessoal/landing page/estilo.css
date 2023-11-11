@@ -69,6 +69,11 @@ p {
 footer {
   background: black;
   color: white;
+  padding: 0px;
+  & > p{
+  margin: 0; 
+  padding: 0;
+}
 }
 footer > p > a {
   text-decoration: none;
@@ -76,6 +81,7 @@ footer > p > a {
 }
 
 @media screen and (min-width:720px){
+
   body{
     display: grid;
     
@@ -103,6 +109,7 @@ footer > p > a {
   main{
     display: flex;
   justify-content: center;
+  grid-column: 1/-1;
   }
    .img{  
      width: 25%;
@@ -122,6 +129,21 @@ p{
 main ~ div {
   padding: 30px 10px 30px 10px;
 }
+
+footer{
+  display: grid;
+  padding: 0;
+  & > p{
+  grid-row: 2;
+  padding: 15px;
+}
+& div{
+  grid-row: 1;
+  
+}
+}
+
+
   }
   
   
