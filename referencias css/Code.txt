@@ -1,0 +1,7 @@
+writing-mode  modo de escrita  horizontal-tb vertical-rl sima para baixo inicia na esqyerda   vertical-lr mesmo mas inicia na direita
+inline-size autura do texto em vertical
+block-size largura
+
+
+
+
